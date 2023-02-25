@@ -1,0 +1,17 @@
+.outerMain {
+    height: 100vh;
+    background-color: #C82833;
+}
+
+.main-login-form {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 0 !important;
+    width: 400px;
+    margin-left: 10px;
+}

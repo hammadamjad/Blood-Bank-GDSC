@@ -1,0 +1,163 @@
+.Wrapper-Main {
+    height: 100vh;
+    background-color: #f5d8d8;
+    padding: 0px;
+
+}
+
+.Main {
+    max-width: 1280px;
+    min-height: 844px;
+    border-radius: 15px;
+    overflow: hidden;
+    perspective: 1px;
+
+}
+
+/* section-navbar */
+.Navbar-Custom {
+    min-width: 83px;
+    display: grid;
+    grid-template-rows: 20% auto 20%;
+    row-gap: 20px;
+    background-color: #FAC8C8;
+}
+
+.Logo-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Middle-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.End-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Main-Content-Container {
+    background-color: white;
+    height: 100%;
+    /* width: 100%; */
+    min-width: 1197px;
+    position: relative;
+}
+
+.Logo-Menu {
+    width: 30px;
+}
+
+.Nav-Mobile-Con {
+    display: none;
+}
+
+
+#Img-res {
+    display: none;
+}
+
+.Toapply {
+    background-color: #FAC8C8;
+    width: 70%;
+    height: 100vh;
+    grid-template-rows: 20% auto 20%;
+    row-gap: 20px;
+    position: absolute;
+    left: -600px;
+    top: 0;
+    visibility: visible;
+    -webkit-animation: Slide 0.5s forwards;
+    -webkit-animation-delay: .6s;
+    animation: Slide 0.5s forwards;
+    animation-delay: .6s;
+    z-index: 1;
+    display: none;
+}
+
+@-webkit-keyframes Slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes Slide {
+    100% {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .Main-Content-Container {
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .Main {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        overflow: hidden;
+        perspective: 0px;
+
+    }
+}
+
+
+@media screen and (max-width: 1122px) {
+    .Main {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        overflow: hidden;
+        perspective: 0px;
+
+    }
+}
+
+
+@media screen and (max-width: 944px) {
+    .Wrapper-Main {
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .Main-Content-Container {
+        min-height: 100vh;
+    }
+}
+
+
+
+@media screen and (max-width: 1013px) {
+    .Main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Wrapper-Main {
+        position: relative;
+    }
+
+    .Main-Content-Container {
+        width: 100%;
+    }
+
+    .Navbar-Custom {
+        display: none;
+    }
+
+    .Nav-Mobile-Con {
+        display: flex;
+    }
+
+}

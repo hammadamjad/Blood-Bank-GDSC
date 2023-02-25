@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+
+.MainCon {
+    /* overflow: auto */
+}
+
+.TitleBar .Heading {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ProfileItems {
+    width: 300px;
+
+}
+
+.PieChartContainer {
+    height: 350px;
+    border-radius: 8px;
+}
+
+.TotalNum {
+    color: red
+}
+
+.ContainerOne {
+    width: 194px;
+    height: 232px;
+    border-radius: 8px;
+}
+
+.ContainerTwo {
+    /* width: 460px; */
+    width: 194px;
+    /* height: 232px; */
+    border-radius: 8px;
+}

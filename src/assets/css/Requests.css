@@ -1,0 +1,120 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    /* min-width: 400px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.18);
+}
+
+.styled-table thead tr {
+    /* background-color: #009879; */
+    color: #870202;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    /* background-color: #f3f3f3; */
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr.active-row {
+    /* font-weight: bold; */
+    /* color: #009879; */
+}
+
+.moodle-inner {
+    width: 700px;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.moodle-form {
+    position: absolute;
+    height: 100%;
+}
+
+.btn-add {
+    width: 162px;
+    height: 39px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: #C82833;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.MainRequest {
+    position: relative;
+    height: 100%;
+}
+
+.moodle-add-request {
+    box-shadow: 0 0 0 100000px rgba(0, 0, 0, .2);
+    height: 600px;
+    max-width: 400px;
+    /* width: 400px;
+    height: 500px; */
+    /* background-color: #870202; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.moodle-single-get>input {
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+
+}
+
+.moodle-note {
+    height: 150px;
+}
+
+.cancel-moodle-btn {
+    width: 158px;
+    height: 39px;
+    background: #FAC8C8;
+    color: #C82833;
+    border: 1px solid #C82833;
+    border-radius: 11px;
+}
+
+.submit-moodle-btn {
+    width: 158px;
+    height: 39px;
+    color: white;
+    background: #C82833;
+    border-radius: 11px;
+}
+
+
+@media screen and (max-width: 944px) {
+    .MainRequest {
+        min-height: 100vh;
+    }
+
+}

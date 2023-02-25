@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #F9C6C9;
+}
+
+.section-1 {
+    height: 559px;
+    background-color: #F3EBEB;
+}
+
+.btn {
+    color: white !important;
+    width: 200px;
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 15px !important;
+    padding-right: 20px !important;
+    margin-right: 10px !important;
+    font-weight: 500 !important;
+}
+
+.help-con {
+    width: 300px;
+    border: 3px solid transparent;
+
+    border-image: linear-gradient(to right, #B00606, #E04343);
+
+    border-image-slice: 1;
+
+    border-radius: 25px;
+}
+
+.section-1-image {
+    width: 290px;
+
+}
+
+.section-1-content p {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.about-img {
+    width: 436px;
+}
+
+footer {
+    height: 200px;
+    background: #000;
+}
+
+.section-3 {
+    height: 490px;
+}
