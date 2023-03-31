@@ -12,13 +12,17 @@ import {
 } from "firebase/firestore";
 import { db } from "../../utils/firebase";
 import { AuthContext } from "../../context/AuthContext";
+import { ChatContext } from "../../context/ChatContext";
 const Search = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
   const [err, setErr] = useState(false);
 
   const { currentUser } = useContext(AuthContext);
+  const { dispatch } = useContext(ChatContext);
 
+  // console.log(user);
+  // console.log(currentUser);
   const handleSearch = async () => {
     const q = query(collection(db, "UserData"), where("name", "==", username));
 
@@ -26,6 +30,7 @@ const Search = () => {
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
         setUser(doc.data());
+        dispatch({ type: "CHANGE_USER", payload: user });
       });
     } catch (err) {
       setErr(true);
@@ -66,7 +71,9 @@ const Search = () => {
           [combinedId + ".date"]: serverTimestamp(),
         });
       }
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
 
     setUser(null);
     setUsername("");
@@ -81,10 +88,11 @@ const Search = () => {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        <button onClick={handleSearch}>Click</button>
       </div>
       {err && <span>User not found!</span>}
       {user && (
-        <div className="userChat" onClick={handleSelect}>
+        <div className="userChat bg-dark" onClick={handleSelect}>
           <img src={user.photoURL} alt="" />
           <div className="userChatInfo">
             <span>{user.displayName}</span>
